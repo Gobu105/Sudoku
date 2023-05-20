@@ -171,6 +171,8 @@
                 flag=1;
                 break;
             }
+            col++;
         }
+        row++;
     }
  }
