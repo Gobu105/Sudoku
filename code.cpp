@@ -134,6 +134,31 @@
   
  void check() 
  {
+    int row,col;
+    if(r==1 || r==4 || r==7)
+    {
+        row = r;
+    }
+    if(r==2 || r==5 || r==8)
+    {
+        row = r-1;
+    }
+    if(r==3 || r==6 || r==9)
+    {
+        row = r-2;
+    }
+    if(c==1 || c==4 || c==7)
+    {
+        col = c;
+    }
+    if(c==2 || c==5 || c==8)
+    {
+        col = c-1;
+    }
+    if(c==3 || c==6 || c==9)
+    {
+        col = c-2;
+    }
     //row
     for(int i=1;i<=9;i++)
     {
@@ -157,7 +182,7 @@
     {
         for(int j=1;j<=3;j++)
         {
-            if(a[][]==value)
+            if(a[row][col]==value)
             {
                 flag=1;
                 break;
